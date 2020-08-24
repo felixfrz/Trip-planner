@@ -34,7 +34,7 @@ let updateUiWeather = (data) => {
               Save Trip
             </button>
           </span>
-                    <div><img src="./icons/${weatherDetails.data[0].weather.icon}.png" alt=""></div>
+                    <div><img src="./img/icons/${weatherDetails.data[0].weather.icon}.png" alt=""></div>
                     <span></span>
                     <h2>Typical weather</h2>
                     <h4>Maximum Temp: ${weatherDetails.data[0].max_temp}&deg;</h4>
