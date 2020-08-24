@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid first">
+        <!-- First Page -->
+        <div class="row">
+            <div class=" col-lg-6 container text-center" style="max-width: 300px;">
+                <div class="image py-4">
+                    <!-- first image -->
+                    <img class="shadow-lg img-fluid rounded" src="./background.jpg" alt="" />
+                </div>
+                <div class="form">
+                    <form class="form-group">
+                        <label for="city">Enter City:</label>
+                        <input type="text" class="form-control" placeholder="city" name="city" />
+                        <label for="Departing">Departure Date:</label>
+                        <input type="date" class="mb-4 form-control" name="date" />
+                        <input type="submit" class="btn btn-primary btn-lg text-center" />
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 container second text-center">
+                <div class="second-details text-light img-rounded img-responsive" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(" ./background.jpg") center/cover fixed no-repeat;">
+                    <!-- <h3 class="text-center mt-5 h2"></h3>
+          <h3 class="text-center h4 mt-3"></h3> -->
+                    <!-- <span>
+            <button type="button" class="btn btn-primary btn-sm mt-3">
+              Save Trip
+            </button>
+          </span> -->
+                    <!-- <div><img src="./icons/${weatherDetails.data[0].weather.icon}.png" alt=""></div>
+                    <span></span>
+                    <h2>Typical weather</h2>
+                    <h4>Maximum Temp: ${weatherDetails.data[0].max_temp}&deg;</h4>
+                    <h4>Minimum Temp: ${weatherDetails.data[0].min_temp}&deg;</h4>
+                    <h4>Description: ${weatherDetails.data[0].weather.description}</h4>
+                    <h4 class="mt-5">Time Zone: ${weatherDetails.timezone}</h4> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./places.js"></script>
+    <script src="./app.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
