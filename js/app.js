@@ -12,10 +12,14 @@ console.log(dat);
 let updateUiPic = (data) => {
   picDetails = data.picDetails;
   console.log(picDetails);
-  image.innerHTML = `<img style="width:300px; height:300px" class="shadow-lg rounded img-rounded img-responsive" src=${picDetails.hits[0].largeImageURL} alt="">`;
-    imageTwo.innerHTML = `<div class="image img-fluid image2">
-                        <img style="width:250px; height:250px" class="shadow-lg img-fluid rounded" src=${picDetails.hits[1].largeImageURL} alt="">
-                        </div>`;
+  image.innerHTML = `
+                  <img style="width:450px; height:450px" class="shadow-lg rounded img-rounded img-responsive" src=${picDetails.hits[0].largeImageURL} alt="">
+                  `;
+
+imageTwo.innerHTML = `
+                  <div class="image img-fluid image2">
+                  <img style="width:250px; height:250px" class="shadow-lg img-fluid rounded" src=${picDetails.hits[1].largeImageURL} alt="">
+                  </div>`;
 
 
 };
@@ -28,7 +32,7 @@ let updateUiWeather = (data) => {
 
   second.innerHTML = `
             <h3 class="text-center pt-5 h2 trip">My Trip to ${weatherDetails.city_name}, ${weatherDetails.country_code}.</h3>
-                    <h3 class="text-center h4 mt-3"">Departing: ${departDate}</h3>
+                    <h3 class="text-center h4 mt-3 departing"">Departing: ${departDate}</h3>
                     <span>
             <button type="button" class="btn btn-primary btn-sm mt-3">
               Save Trip
